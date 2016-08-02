@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','XXXX'); //bot api
+define('API_KEY','262799294:AAHLESlEZbYUH2JeKOgrLSPiI8u9lyM91Xs'); //bot api
 
 function makeHTTPRequest($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -88,26 +88,18 @@ if(isset($update->callback_query)){
 
 
     $links = [
-        'tbd'=>'https://telegram.me/joinchat/BdES-z-VdLwCVkbsFxggvg',
-        'tbd_c'=>'https://telegram.me/joinchat/BdES-z-8OoIwyyLePo-_aw',
-        'mhrdev'=>'https://telegram.me/joinchat/BdES-zwBMnQM1W88YwjSpg',
-        'mhrdev_c'=>'https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ'
+        'tbd'=>'https://telegram.me/TeleBlasterTeam
     ];
     var_dump(makeHTTPRequest('sendMessage',[
         'chat_id'=>$update->message->chat->id,
         'text'=>"ربات توسعه یافته برای تبادل های برترین کانال های ای تی تلگرام .",
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
-                [['text'=>'گروه توسعه ربات تلگرام','url'=>$links['tbd']]],
-                [['text'=>'کانال توسعه ربات تلگرام','url'=>$links['tbd_c']]],
-                [['text'=>'گروه پرسش و پاسخ برنامه نویسی','url'=>$links['mhrdev']]],
-                [['text'=>'کانال آموزش برنامه نویسی','url'=>$links['mhrdev_c']]],
-                [['text'=>'کپی کردن لینک ها','url'=>'https://telegram.me/tbdinfo_bot?start=rec']],
-                [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/pp2007ws']]
+                [['text'=>'گروه تیم ربات سازی','url'=>$links['tbd']]],
+                [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/XxattackerxX']]
             ]
         ])
     ]));
 }
 
 file_put_contents('log',ob_get_clean());
-
