@@ -95,7 +95,7 @@ if(isset($update->callback_query)){
         'text'=>"ربات توسعه یافته برای تبادل های برترین کانال های ای تی تلگرام .",
         'reply_markup'=>json_encode([
             'inline_keyboard'=>[
-                [['text'=>'گروه تیم ربات سازی','url'=>$links['tbd']]],
+                [['text'=>'کانال ربات','url'=>$links['tbd']]],
                 [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/XxattackerxX']]
             ]
         ])
