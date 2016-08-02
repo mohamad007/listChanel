@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','262799294:AAHLESlEZbYUH2JeKOgrLSPiI8u9lyM91Xs'); //bot api
+define('API_KEY','259462020:AAH0FhVL5yjUEetUcdFbq4oATuZeE6xfvBY'); //bot api
 
 function makeHTTPRequest($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -88,7 +88,7 @@ if(isset($update->callback_query)){
 
 
     $links = [
-        'tbd'=>'https://telegram.me/TeleBlasterTeam
+        'tbd'=>'https://telegram.me/TeleBlasterTeam'
     ];
     var_dump(makeHTTPRequest('sendMessage',[
         'chat_id'=>$update->message->chat->id,
